@@ -1,0 +1,144 @@
+@font-face {
+  src: url('fonts/WarblerVariable[opsz,wght]-Edu.woff2') format("woff2"),
+       url('fonts/WarblerVariable[opsz,wght]-Edu.woff') format("woff");
+  font-family: '';
+  font-style: ;
+  font-weight: ;
+}
+
+@font-face {
+  src: url('fonts/WarblerVariable-Italic[opsz,wght]-Edu.woff2') format("woff2"),
+       url('fonts/WarblerVariable-Italic[opsz,wght]-Edu.woff') format("woff");
+  font-family: '';
+  font-style: ;
+  font-weight: ;
+}
+
+@font-face {
+  src: url('fonts/WarblerBanner-Regular-Edu.woff2') format("woff2"),
+       url('fonts/WarblerBanner-Regular-Edu.woff') format("woff");
+  font-family: 'WarblerBanner';
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url('fonts/WarblerBanner-Italic-Edu.woff2') format("woff2"),
+       url('fonts/WarblerBanner-Italic-Edu.woff') format("woff");
+  font-family: 'WarblerBanner';
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url('fonts/WarblerBanner-Bold-Edu.woff2') format("woff2"),
+       url('fonts/WarblerBanner-Bold-Edu.woff') format("woff");
+  font-family: 'WarblerBanner';
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  src: url('fonts/WarblerBanner-BoldItalic-Edu.woff2') format("woff2"),
+       url('fonts/WarblerBanner-BoldItalic-Edu.woff') format("woff");
+  font-family: 'WarblerBanner';
+  font-style: italic;
+  font-weight: 700;
+}
+
+@font-face {
+  src: url('fonts/WarblerDisplay-Regular-Edu.woff2') format("woff2"),
+       url('fonts/WarblerDisplay-Regular-Edu.woff') format("woff");
+  font-family: 'WarblerDisplay';
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url('fonts/WarblerDisplay-Italic-Edu.woff2') format("woff2"),
+       url('fonts/WarblerDisplay-Italic-Edu.woff') format("woff");
+  font-family: 'WarblerDisplay';
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url('fonts/WarblerDisplay-Bold-Edu.woff2') format("woff2"),
+       url('fonts/WarblerDisplay-Bold-Edu.woff') format("woff");
+  font-family: 'WarblerDisplay';
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  src: url('fonts/WarblerDisplay-BoldItalic-Edu.woff2') format("woff2"),
+       url('fonts/WarblerDisplay-BoldItalic-Edu.woff') format("woff");
+  font-family: 'WarblerDisplay';
+  font-style: italic;
+  font-weight: 700;
+}
+
+@font-face {
+  src: url('fonts/WarblerDeck-Regular-Edu.woff2') format("woff2"),
+       url('fonts/WarblerDeck-Regular-Edu.woff') format("woff");
+  font-family: 'WarblerDeck';
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url('fonts/WarblerDeck-Italic-Edu.woff2') format("woff2"),
+       url('fonts/WarblerDeck-Italic-Edu.woff') format("woff");
+  font-family: 'WarblerDeck';
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url('fonts/WarblerDeck-Bold-Edu.woff2') format("woff2"),
+       url('fonts/WarblerDeck-Bold-Edu.woff') format("woff");
+  font-family: 'WarblerDeck';
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  src: url('fonts/WarblerDeck-BoldItalic-Edu.woff2') format("woff2"),
+       url('fonts/WarblerDeck-BoldItalic-Edu.woff') format("woff");
+  font-family: 'WarblerDeck';
+  font-style: italic;
+  font-weight: 700;
+}
+
+@font-face {
+  src: url('fonts/WarblerText-Regular-Edu.woff2') format("woff2"),
+       url('fonts/WarblerText-Regular-Edu.woff') format("woff");
+  font-family: 'WarblerText';
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url('fonts/WarblerText-Italic-Edu.woff2') format("woff2"),
+       url('fonts/WarblerText-Italic-Edu.woff') format("woff");
+  font-family: 'WarblerText';
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url('fonts/WarblerText-Bold-Edu.woff2') format("woff2"),
+       url('fonts/WarblerText-Bold-Edu.woff') format("woff");
+  font-family: 'WarblerText';
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  src: url('fonts/WarblerText-BoldItalic-Edu.woff2') format("woff2"),
+       url('fonts/WarblerText-BoldItalic-Edu.woff') format("woff");
+  font-family: 'WarblerText';
+  font-style: italic;
+  font-weight: 700;
+}
+
