@@ -12,25 +12,25 @@
   
   header {
     /* where to set the color of the nav bar */
-      background: rgb(170, 51, 51);
-      text-align: left;
-      top:0px;
+      background: #F4F1E8;
+      text-align: center;
+      top:40px;
       position: fixed;
       z-index: 999;
       width: 100%
   }
   
   .logo {
-    margin: 0;
+    margin: 40;
   }
   /* where to change the background color of the pop-up nav bar*/
   nav {
       position: absolute;
-      text-align: left;
-      padding-top:10px;
+      text-align: center;
+      padding-top:40px;
       top: 100%;
-      left: 10px;
-      background: rgb(161, 64, 64);
+      left: 40px;
+      background: #F4F1E8;
       width: 100%;
       transform: scale(1,0);
       transform-origin: top;
@@ -38,7 +38,7 @@
   }
   
   nav ul {
-      margin: 0;
+      margin: 50;
       padding: 0;
       list-style: none;
   }

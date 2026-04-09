@@ -7,7 +7,7 @@
     }
     
     body{
-    background-color: pink;
+    background-color: #F4F1E8;
     font-family: 'Warbler';
 }
 /* how the page wrapper will appear on mobile */
@@ -44,8 +44,8 @@ grid-area: a;
 }
 /* CSS for the footer */
 footer{
-    background-color: rgb(138, 21, 21);
-    height:200px;
+    background-color: #B6C184;
+    height:120px;
 }
 
 /* font styling area */
