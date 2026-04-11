@@ -28,9 +28,33 @@
     font-weight: 400;
     font-style: italic;
 }
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
     body{
+    margin: 0;
     background-color: #F4F1E8;
-    font-family: 'Warbler';
+    color: #6B7450;
+    font-family: "warbler text", serif;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+main {
+    width: min(100% - 3rem, 78rem);
+    margin-inline: auto;
+}
+section {
+    margin-block: 7.5rem;
+}
+h1, h2, h3, p {
+    margin: 0;
 }
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
@@ -71,6 +95,18 @@ footer{
 }
 
 /* font styling area */
+.hero h1 {
+    font-family: "warbler variable", serif;
+    font-size: clamp(4rem, 10vw, 7.5rem);
+    letter-spacing: 0.03em;
+    animation: heroweightChange 5s infinite;
+    line-height: 0.95;
+}
+.hero-initial {
+    font-size: 1.18em;
+    display: inline-block;
+    margin-right: -0.05em;
+}
 h2{
     color: firebrick;
     font-variation-settings: "opsz" 16, "wght" 900, "slnt" -8;
