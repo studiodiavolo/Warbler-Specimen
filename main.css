@@ -56,14 +56,6 @@ section {
 h1, h2, h3, p {
     margin: 0;
 }
-/* how the page wrapper will appear on mobile */
-.page-wrapper{
-    /* where to change the width of the columns on desktop view */
-    width: min(100% - 3rem, 95ch);
-    margin-inline: auto;
-}
-
-/* font styling area */
 .hero h1 {
     font-family: "warbler variable", serif;
     font-size: clamp(4.5rem, 11vw, 8.5rem);
@@ -80,76 +72,13 @@ h1, h2, h3, p {
     line-height: 0.82;
     margin-right: -0.19em;
 }
-h2{
-    color: firebrick;
-    font-variation-settings: "opsz" 16, "wght" 900, "slnt" -8;
-}
-
-h3{
-    font-weight:20; 
+.hero {
+    position: relative;
+    min-height: 85vh;
+    display: grid;
+    place-items: center;
     text-align: center;
-    font-size: 5em;
-    animation: weightChange 5s infinite;
-}
-
-@keyframes weightChange {
-    0%, 100%{
-        font-variation-settings: "opsz" 16, "wght" 200, "slnt" 0;
-    }
-    50%{font-variation-settings: "opsz" 16, "wght" 900, "slnt" -13;
-    }
-}
-/* animations for the variations section */
-.weight{
-    animation: weightVariations 5s infinite;
-}
-@keyframes weightVariations {
-    0%, 100%{
-        font-variation-settings: "opsz" 16, "wght" 200, "slnt" 0;
-    }
-    50%{font-variation-settings: "opsz" 16, "wght" 900, "slnt" 0;
-    }
-}
-/* where the animation is for the width change */
-.width{
-    animation: widthVariations 5s infinite;
-}
-@keyframes widthVariations {
-    0%, 100%{
-        font-variation-settings: "opsz" 20, "wght" 200, "slnt" 0;
-    }
-    50%{font-variation-settings: "opsz" 20, "wght" 900, "slnt" 0;
-    }
-}
-
-h5{
-    font-size:40px;
-    color:blue;
-    margin:15px;
-}
-
-/* variable font that changes on hover */
-.variable-font{
-    font-weight:1 ;
-    height:100vh;
-    font-size: 10em;
-    display:grid;
-    place-content: center;
-    margin: 0;
-    text-align: center;
-    font-variation-settings: "wght" 40, "wdth" 0, "XXXX" 1;
-    transition: 
-        font-weight 500ms,
-        font-variation-settings 3s;
-}
-
-.variable-font:hover{
-    font-weight:500 ;
-    height:100vh;
-    font-size: 7em;
-    display:grid;
-    place-content: center;
-    margin: 0;
-    text-align: center;
-    font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
+    padding: 8rem 1.5rem 6rem;
+    background-color: #B6C184;
+    overflow: hidden;
 }
