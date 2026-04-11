@@ -1,11 +1,33 @@
 @font-face {
     src: url("./fonts/WarblerVariable[opsz,wght]-Edu.woff2") format("woff2"),
-         url("./fonts/WarblerVariable[opsz\,wght]-Edu.woff") format("woff");
-    font-family: 'Warbler';
+         url("./fonts/WarblerVariable-Italic[opsz\,wght]-Edu.woff") format("woff");
+    font-family: "warbler variable";
     font-style: normal;
-    font-weight: normal;
+    font-weight: 100 900;
     }
     
+@font-face {
+    font-family: "warbler display";
+    src: url("./fonts/WarblerDisplay-Bold-Edu.woff2") format("woff2");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "warbler display";
+    src: url("./fonts/WarblerDisplay-Regular-Edu.woff2") format("woff2");
+    font-weight: 400;
+}
+@font-face {
+    font-family:"warbler text";
+    src: url("./fonts/WarblerText-Regular-Edu.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family:"warbler text";
+    src: url("./fonts/WarblerText-Italic-Edu.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
     body{
     background-color: #F4F1E8;
     font-family: 'Warbler';
