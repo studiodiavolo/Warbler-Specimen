@@ -62,50 +62,23 @@ h1, h2, h3, p {
     width: min(100% - 3rem, 95ch);
     margin-inline: auto;
 }
-/* how the page wrapper appears on desktop */
-
-@media only screen and (min-width:800px){
-.page-wrapper{
-display: grid;
-grid-gap: 25px;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: auto;
-grid-template-areas: 
-    "v h"
-    "a a";
-}
-
-#history {
-grid-area: h;
-background-color: lightcoral;
-}
-
-#variations{
-grid-area: v;
-}
-
-#alphabet {
-grid-area: a;
-}
-}
-/* CSS for the footer */
-footer{
-    background-color: #B6C184;
-    height:120px;
-}
 
 /* font styling area */
 .hero h1 {
     font-family: "warbler variable", serif;
-    font-size: clamp(4rem, 10vw, 7.5rem);
-    letter-spacing: 0.03em;
+    font-size: clamp(4.5rem, 11vw, 8.5rem);
+    font-weight: 400;
+    letter-spacing: 0.055em;
+    color: #384225;
     animation: heroweightChange 5s infinite;
-    line-height: 0.95;
+    line-height: 0.9;
+    margin: 0;
 }
 .hero-initial {
-    font-size: 1.18em;
+    font-size: 1.5em;
     display: inline-block;
-    margin-right: -0.05em;
+    line-height: 0.82;
+    margin-right: -0.19em;
 }
 h2{
     color: firebrick;
