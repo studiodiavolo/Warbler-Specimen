@@ -13,11 +13,11 @@
           <input type="checkbox" id="nav-checkbox" class="nav-checkbox">
           <nav class="page-nav">
                   <ul>
-                      <li><a href="#history">About</a></li>
-                      <li><a href="#variations">Specimen</a></li>
-                      <li><a href="#alphabet">Variations</a></li>
-                      <li><a href="#alphabet">Characters</a></li>
-                      <li><a href="#alphabet">Download</a></li>
+                      <li><a href="#about">About</a></li>
+                      <li><a href="#specimen">Specimen</a></li>
+                      <li><a href="#variations">Variations</a></li>
+                      <li><a href="#characters">Characters</a></li>
+                      <li><a href="#download">Download</a></li>
                       
                   </ul>
               </nav>
@@ -26,70 +26,71 @@
        </label>
           </header>
           <!-- Hero section -->
+           <main class="page-wrapper">
           <section class="hero">
-             <p>INTRODUCING</p>
-                <h3>WARBLER</h3>
-                <p>A SIMPLE TYPEFACE FOR TEXT AND DISPLAY</p>
+             <p class="hero-intro">INTRODUCING</p>
+                <h1>WARBLER</h1>
+                <p class="hero-subtitle">A SIMPLE TYPEFACE FOR TEXT AND DISPLAY</p>
           </section>
           <!-- Type history -->
-<section class="page-wrapper">
-          <section id="about-specimen"> 
-            <div class="container">
+<section class="about-specimen">
+          <section id="about" class="about"> 
             <h2>About</h2>
                 <p>Warbler is a typeface designed for extended reading, with a strong focus on how it performs on screen. It takes inspiration from the types cut by William Martin in 1790 for the English printer William Bulmer, used in his editions for the Shakespeare Printing Office.
 
 This interpretation highlights a softer side of the Modern serif. Instead of feeling rigid or overly strong, Warbler has a more gentle and refined tone, creating a contrast with the more authoritative style of the Scotch Romans that came after.</p>
-                  <p>Designed by David Jonathan Ross</p>
-                  </div>
-                  <div class="container">
-                    <p>Sentimental</p>
+                  <p class="designer-credit">Designed by David Jonathan Ross</p>
+          </section>
+          <section id="specimen" class="specimen">
+                    <h2 class="visually-hidden">Specimen</h2>
+                    <div class="specimen-frame">
+                    <p class="specimen-word">Sentimental</p>
+                    <p class="specimen-styles">
                     <span class="regular">Regular</span>
                     <span class="bold">Bold</span>
                     <span class="italic">Italic</span>
+                    </p>
                     </div>
           </section>
-<section id="adjectives">
-            <p>The essence of Warbler </p>
-            <div>
+          </section>
+<section id="adjectives" class="adjectives">
+            <p class="adjective-label">The essence of Warbler </p>
+            <div class="adjective-words">
               <p>Elegant</p>
               <p>Soft</p>
               <p>Delicate</p>
               <p>Sophisticated</p>
             </div>
 </section>
-          <section id="variations">
-            <div class="container">
+          <section id="variations" class="variations">
+            <div class="variations-text">
             <h3>Variable Axes</h3>
-            <p>Warbler is a variable typeface with two main axes: weight and optical size. These axes allow the font to adapt across different uses, from delicate display settings to comfortable long-form reading.
-The weight axis controls how light or bold the type appears, while the optical size adjusts the details of the letterforms depending on size, improving clarity and readability on screen.</p>
+            <p>Warbler is a variable typeface with two main axes: weight and optical size. These axes allow the font to adapt across different uses, from delicate display settings to comfortable long-form reading.</p>
+<p>The weight axis controls how light or bold the type appears, while the optical size adjusts the details of the letterforms depending on size, improving clarity and readability on screen.</p>
             </div>
-            <div class="container">
-              <div class="container">
-              <p>Weight axis</p>
-              <! -- Add sliders here --> 
+            <div class="variations-controls">
+              <div class="axis">
+              <label for="weight">Weight</label>
+              <input type="range" id="weight" name="weight" min="300" max="900" value="400"> 
             </div>
-              <div class="container">
-              <p>Optical size axis</p>
-              <! -- Add sliders here -->
+              <div class="axis">
+              <label for="opsz">Optical Size</label>
+              <input type="range" id="opsz" name="opsz" min="8" max="72" value="16">
               </div>
             </div>
-            <div class="container">
-              <div class="container">
-              <p>Aa</p>
-              </div>
-              <div class="container">
-              <p>Sample Text</p>
-              </div>
+            <div class="variations-sample">
+              <p id="sample-text" class="sample-letter">Aa</p>
+              <p class="sample-caption">Sample Text</p>
             </div>
           </section>
 
-          <section id="reading">
+          <section id="reading" class="reading">
             <h2>From an old tale</h2>
             <p>In old times when wishing still helped one, there lived a king whose daughters were all beautiful, but the youngest was so beautiful that the sun itself, which has seen so much, was astonished whenever it shone in her face. Close by the King’s castle lay a great dark forest, and under an old lime-tree in the forest was a well, and when the day was very warm, the King’s child went out into the forest and sat down by the side of the cool fountain, and when she was dull she took a golden ball, and threw it up on high and caught it, and this ball was her favourite plaything.</p>
           </section>
 
-          <section id="alphabet">
-            <h2>Full character set</h2>
+          <section id="characters" class="character-set">
+            <h2>Character set</h2>
             <p>A À Á Â Ã Ä Å Æ Ā Ă Ą Ạ Ả Ấ Ầ Ẩ Ẫ Ậ Ắ Ằ Ẳ Ẵ Ặ B C Ç Ć Ĉ Ċ Č D Ď Ḍ Ḏ Ð Đ E È É Ê Ë Ē Ĕ Ė Ę Ě Ẹ Ẻ Ẽ Ế Ề Ể Ễ Ệ F G Ĝ Ğ Ġ Ģ Ḡ H Ĥ Ḥ Ḫ Ħ I Ì Í</p>
             <p>Î Ï Ĩ Ī Ĭ Į İ Ỉ Ị IJ J Ĵ K Ķ L Ĺ Ŀ Ł Ļ Ľ Ḷ Ḹ Ḻ M Ṃ N Ñ Ń Ņ Ň Ṅ Ṇ Ṉ Ŋ O Ò Ó Ô Õ Ö Ø Œ Ō Ŏ Ő Ọ Ỏ Ố Ồ Ổ Ỗ Ộ Ơ Ớ Ờ Ở Ỡ Ợ P Q R Ŕ Ŗ Ř Ṛ Ṝ Ṟ S Ś Ŝ</p>
             <p>Ş Š Ș Ṡ Ṣ ẞ T Ţ Ť Ț Ṭ Ṯ Ŧ U Ù Ú Û Ü Ũ Ū Ŭ Ů Ű Ų Ư Ụ Ủ Ứ Ừ Ử Ữ Ự V W Ŵ Ẁ Ẃ Ẅ X Y Ý Ŷ Ÿ Ẏ Ỳ Ỵ Ỷ Ỹ Z Ź Ż Ž Ẓ Þ a à á â ã ä å æ ā ă ą ạ ả ấ ầ ẩ ẫ ậ</p>
@@ -98,12 +99,25 @@ The weight axis controls how light or bold the type appears, while the optical s
             <p>0 1 2 3 4 5 6 7 8 9  - – — _ ( ) [ ] { } # % ‰ ’ " ’ ’ “ ” ’ „ ’ ’ « » * † ‡ . , : ; … ! ¡ ? ¿ / \ ⁄ | ¦ @ & § ¶ № · • ′ ″ + − ± ÷ × = < > ≤ ≥ ≈ ≠ $ ¢ £ ¥ € ƒ ª º © ® ™ ° </p>
           </section>
 
-          </div>
-          </section>
+           <section id="download" class="download">
+            <h2>Download Warbler</h2>
+            <p>Start using this font in your next projects.</p>
+            <div class="download-links">
+              <a href="#">Trial</a>
+              <a href="#">Buy</a>
+              </div>
+           </section>
+          </main>
 
           <!-- Start of the footer -->
           <footer>
-            Footer content goes here
+            <div class="footer-left">
+              <p>Valentina Vinces</p>
+              <p>Studiodiavolodesign@gmail.com</p>
+            </div>
+            <div class="footer-right">
+              <p>University of Massachusetts Dartmouth - Web Typography</p>
+            </div>
           </footer>
 
 </body>
