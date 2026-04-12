@@ -103,7 +103,7 @@ h2 {
 }
 .hero-content {
     position: relative;
-    top: 14rem;
+    top: 20rem;
 }
 .hero-intro{
     display: flex;
@@ -141,7 +141,7 @@ h2 {
 .hero::before {
     content: "";
     position: absolute;
-    top: -130px;
+    top: -10px;
     width: 101%;
     height: 140%;
     background-image:url("./assets/lace-hero.png");
