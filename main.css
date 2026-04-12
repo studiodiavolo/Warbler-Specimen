@@ -59,12 +59,20 @@ h1, h2, h3, p {
 .hero h1 {
     font-family: "warbler variable", serif;
     font-size: clamp(4.5rem, 11vw, 8.5rem);
-    font-weight: 400;
     letter-spacing: 0.055em;
     color: #384225;
-    animation: heroweightChange 5s infinite;
     line-height: 0.9;
     margin: 0;
+    font-variation-settings: "wght" 320, "opsz" 72;
+    animation: warbleraxes 6s ease-in-out infinite;
+}
+@keyframes warbleraxes {
+    0%, 100% {
+        font-variation-settings: "wght" 320, "opsz" 72;
+    }
+    50% {
+        font-variation-settings: "wght" 760, "opsz" 72;
+    }
 }
 .hero-initial {
     font-size: 1.5em;
@@ -78,19 +86,53 @@ h1, h2, h3, p {
     display: grid;
     place-items: center;
     text-align: center;
-    padding-bottom: clamp(8rem, 20vh, 14rem);
+    padding-bottom:25rem;
     background-color: #B6C184;
     overflow: visible;
     margin: 0;
    
 }
 .hero-content {
-   padding-top: 18rem;
+    position: relative;
+    top: 14rem;
+}
+.hero-intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9rem;
+    margin-bottom: 1.25rem;
+    font-family: warbler display, serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #5F6B3E;
+    margin-bottom: 4rem;
+}
+.hero-intro::before,
+.hero-intro::after {
+    content: "";
+    display: block;
+    width: 10rem;
+    height: 1px;
+    background-color: #4A5632;
+    opacity: 0.3;
+}
+.hero-subtitle{
+    margin-top: 1.5rem;
+    font-family: "warbler display", serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    letter-spacing: 0.18rem;
+    text-transform: uppercase;
+    color: #5F6B3E;
+    margin-top: 4rem;
 }
 .hero::before {
     content: "";
     position: absolute;
-    top: -10px;
+    top: -130px;
     width: 101%;
     height: 140%;
     background-image:url("./assets/lace-hero.png");
