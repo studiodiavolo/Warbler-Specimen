@@ -51,7 +51,7 @@ main {
     margin-inline: auto;
 }
 section {
-    margin-top: 5rem;
+    margin-top: 7rem;
 }
 h1, h2, h3, p {
     margin: 0;
@@ -143,7 +143,7 @@ h2 {
 .hero::before {
     content: "";
     position: absolute;
-    top: -10px;
+    top: -40px;
     width: 101%;
     height: 140%;
     background-image:url("./assets/lace-hero.png");
@@ -157,9 +157,7 @@ h2 {
     position: relative;
     z-index: 1;
 }
-.about-specimen {
-   margin-top: 10rem;
-}
+
 .about-specimen .page-wrapper {
  display: grid;
   grid-template-columns: 1fr 1.3fr;
@@ -279,6 +277,9 @@ h2 {
 .italic {
   font-style: italic;
 }
+ .about-specimen + .adjectives {
+  margin-top: 2.5rem;
+}
 .adjectives-box {
   background-color: #E8EDD9;
   padding: 2rem 2rem 2.5rem;
@@ -350,4 +351,146 @@ h2 {
   .adjectives-words p:nth-child(4) {
     justify-self: start;
   }
+}
+.variations{
+  margin-top: 4rem;
+}
+.variations .page-wrapper{
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 0.6fr;
+  gap: 3rem;
+  align-items: center;
+}
+@media screen and (min-width: 800px) {
+  .variations .page-wrapper {
+    grid-template-columns: 1fr 1fr 0.7fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  
+}
+.variations-text h2 {
+  margin-bottom: 1.5rem;
+}
+.variations-text p {
+  line-height: 1.7;
+  max-width: 28rem;
+}
+.variations-text p + p {
+  margin-top: 1.5rem;
+}
+.variations-controls{
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+.axis input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* track */
+.axis input[type="range"]::-webkit-slider-runnable-track {
+  height: 8px;
+  background: #6f6f6f;
+  border-radius: 999px;
+}
+
+.axis input[type="range"]::-moz-range-track {
+  height: 8px;
+  background: #6f6f6f;
+  border-radius: 999px;
+}
+
+/* thumb */
+.axis input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -6px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #A8B275;
+  border: none;
+}
+
+.axis input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #A8B275;
+  border: none;
+}
+
+/* hover */
+.axis input[type="range"]:hover::-webkit-slider-thumb {
+  background: #95A164;
+}
+
+.axis input[type="range"]:hover::-moz-range-thumb {
+  background: #95A164;
+}
+.axis {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 1rem;
+}
+.axis label{
+  font-family: "Warbler Text", serif;
+  font-size: 1rem;
+  color: #4A5632;
+  white-space: nowrap;
+}
+.axis input[type="range"] {
+  width: 100%;
+  min-width: 0;
+  accent-color: #9AA66D;
+  opacity: 0.8;
+}
+.variations-sample {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.sample-letter {
+  margin: 0;
+  font-family: "Warbler Variable", serif;
+  font-size: clamp(5rem, 7vw, 6.5rem);
+  line-height: 1;
+  color: #4A5632;
+  font-variation-settings: "wght" 400, "opsz" 48;
+}
+.sample-caption {
+  margin-top: 1.25rem;
+  font-family: "Warbler Variable", serif;
+  font-size: 0.9rem;
+  color:#7A845C ;
+  letter-spacing: 0.03em;
+}
+@media screen and (max-width: 799px) {
+  .variations .page-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .variations-sample {
+    margin-top: 1rem;
+  }
+}
+#sample-input {
+  margin-top: 1rem;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+  max-width: 16rem;
+  border: 1px solid #9AA66D;
+  background-color: #F4F1E8;
+  color: #4A5632;
+  font-family: "Warbler Variable", serif;
+  font-size: 1.2rem;
+  text-align: center;
 }

@@ -77,6 +77,7 @@
             </div>
 </section>
           <section id="variations" class="variations">
+            <div class="page-wrapper">
             <div class="variations-text">
             <h2>Variable Axes</h2>
             <p>Warbler is a variable typeface with two main axes: weight and optical size. These axes allow the font to adapt across different uses, from delicate display settings to comfortable long-form reading.</p>
@@ -85,16 +86,19 @@
             <div class="variations-controls">
               <div class="axis">
               <label for="weight">Weight</label>
-              <input type="range" id="weight" name="weight" min="300" max="900" value="400"> 
+              <input type="range" id="weight" name="weight" min="400" max="700" value="400"> 
             </div>
               <div class="axis">
               <label for="opsz">Optical Size</label>
-              <input type="range" id="opsz" name="opsz" min="8" max="72" value="16">
+              <input type="range" id="opsz" name="opsz" min="15" max="96" value="48">
               </div>
             </div>
             <div class="variations-sample">
               <p id="sample-text" class="sample-letter">Aa</p>
-              <p class="sample-caption">Sample Text</p>
+              <label for="sample-input" class="visually-hidden">Type your text here</label>
+              <input type="text" id="sample-input" name="sample-input" placeholder="Input your text here">
+              <p class="sample-caption">Type to test the font</p>
+            </div>
             </div>
           </section>
 
@@ -133,6 +137,7 @@
               <p>University of Massachusetts Dartmouth - Web Typography</p>
             </div>
           </footer>
+          <script src="./script.js"></script>
 
 </body>
 </html>
