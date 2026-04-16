@@ -41,6 +41,7 @@ html {
     background-color: #F4F1E8;
     color: #6B7450;
     font-family: "warbler text", serif;
+    overflow-x: hidden;
 }
 img{
     display: block;
