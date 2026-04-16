@@ -119,6 +119,12 @@ h2 {
     font-variation-settings: "wght" 320, "opsz" 72;
     animation: warbleraxes 6s ease-in-out infinite;
 }
+
+@media screen and (max-width: 799px) {
+  .hero h1 {
+    font-size: clamp(3rem, 8vw, 5rem);
+  }
+}
 @keyframes warbleraxes {
     0%, 100% {
         font-variation-settings: "wght" 320, "opsz" 72;
@@ -149,8 +155,8 @@ h2 {
 
 @media screen and (max-width: 799px) {
   .hero {
-    min-height: 80vh;
-    padding-bottom: 12rem;
+    min-height: 30vh;
+    padding-bottom: 10rem;
   }
 }
 
@@ -178,6 +184,13 @@ h2 {
     color: #5F6B3E;
     margin-bottom: 4rem;
 }
+
+@media screen and (max-width: 799px) {
+  .hero-intro {
+    font-size: 0.75rem;
+    margin-bottom: 2rem;
+  }
+}
 .hero-intro::before,
 .hero-intro::after {
     content: "";
@@ -203,6 +216,13 @@ h2 {
     text-transform: uppercase;
     color: #5F6B3E;
     margin-top: 4rem;
+}
+
+@media screen and (max-width: 799px) {
+  .hero-subtitle {
+    font-size: 0.75rem;
+    margin-top: 2rem;
+  }
 }
 .hero::before {
     content: "";
