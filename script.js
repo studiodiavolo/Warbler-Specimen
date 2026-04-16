@@ -20,3 +20,21 @@ weightSlider.addEventListener("input", updateSampleStyles);
 opszSlider.addEventListener("input", updateSampleStyles);
 
 updateSampleStyles();
+document.querySelectorAll('.character-string').forEach(group => {
+  const chars = group.textContent.split('');
+  group.innerHTML = '';
+
+  chars.forEach(char => {
+    const span = document.createElement('span');
+
+    // preserve spaces
+    if (char === ' ') {
+      span.classList.add('space');
+      span.innerHTML = '&nbsp;';
+    } else {
+      span.textContent = char;
+    }
+
+    group.appendChild(span);
+  });
+});

@@ -496,10 +496,225 @@ h2 {
   text-align: center;
 }
 .reading-intro {
-  margin: 0 0 1rem 0;
-  max-width: 40rem;
-  font-size: 1rem;
+  margin-bottom: 1rem;
+  max-width: 38rem;
+  font-size: 0.95rem;
   line-height: 1.6;
-  color: #6f7953;
+  color: #7A845C;
+}
+.reading h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-family: "Warbler Display", serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin: 0 0 2rem 0;
+}
+.reading p {
+  
+  font-family: "Warbler Text", serif;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  letter-spacing: 0.01em;
+  color: #5f6b45;
+
+}
+.reading-body::first-letter{
+  float: left;
+  font-family: "Warbler Display", serif;
+  font-size: 4.5rem;
+  line-height: 0.82;
+  margin-right: 0.4rem;
+  margin-top: 0.05rem;
+  color: #4A5632;
+
+}
+.reading-box {
+  background-color: #f0ece1;
+  padding: 2.5rem 2rem 3rem;
+}
+.character-set .page-wrapper{
+  max-width: 82rem;
+}
+.character-grid{
+  margin-top: 2rem;
+  display: grid;
+  gap: 2rem;
 }
 
+.character-heading .heading-line {
+  width: 100%;
+  max-width: 50rem;
+  height: 1px;
+  background-color: #4A5632;
+  opacity: 0.3;
+}
+.character-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(74, 86, 50, 0.15);
+}
+
+.character-label {
+  font-family: "Warbler Display", serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: 0.5rem;
+  color: #4A5632;
+}
+.character-string {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.character-string span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.2rem;
+  min-height: 2.2rem;
+  padding: 0.2rem 0.35rem;
+  border: 1px solid rgba(74, 86, 50, 0.15);
+  background-color: rgba(255, 255, 255, 0.2);
+  font-family: "Warbler Text", serif;
+  font-size: 1.25rem;
+  line-height: 1;
+  color: #4A5632;
+}
+.character-string span.space {
+  border: none;
+  background: transparent;
+}
+.character-string span:hover {
+  background-color: rgba(74, 86, 50, 0.1);
+}
+.download .page-wrapper {
+  max-width: 82rem;
+}
+.download-box {
+  position: relative;
+  background-color: #4A5632;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  overflow: hidden;
+}
+.download-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("./assets/download-background.jpg");
+  background-repeat: repeat;
+  background-size: 200px auto;
+  opacity: 0.40;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+.download-box > * {
+  position: relative;
+  z-index: 1;
+}
+.download-box h2 {
+  margin: 0 0 0.75rem 0;
+  color: #F4F1E8;
+  font-family: "Warbler Display", serif;
+  font-size: 2.5rem;
+}
+.download-text  {
+  margin: 0;
+  color: #DDDAD2;
+  font-family: "Warbler Text", serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.download-links {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;;
+}
+.download-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 7rem;
+  padding: 0.65rem 1.5rem;
+
+  border: 1px solid #B6C184;
+  background-color: #B6C184;
+  color: #F4F1E8;
+
+  font-family: "Warbler Display", serif;
+  font-size: 0.95rem;
+  text-decoration: none;
+  line-height: 1;
+
+  border-radius: 999px; /* pill shape */
+  transition: all 0.2s ease;
+}
+.download-button:hover {
+  background-color: #E8EDD9;
+  color: #4A5632;
+
+}
+.site-footer {
+  background-color: #B6C184;
+  padding: 1.25rem 0;
+  margin-top: 4rem;
+}
+.site-footer .page-wrapper {
+  padding: 0 clamp(1.5rem, 5vw, 3rem);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-left p,
+.footer-right p {
+  margin: 0;
+  color: #F4F1E8;
+  font-family: "Warbler Text", serif;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.footer-name {
+  font-family: "Warbler Display", serif;
+  font-size: 1rem;
+}
+
+.footer-contact a {
+  color: #F4F1E8;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 799px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-right {
+    align-items: flex-start;
+  }
+}
