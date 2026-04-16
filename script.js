@@ -1,3 +1,15 @@
+// Mobile menu accessibility
+const navCheckbox = document.getElementById('nav-checkbox');
+const navToggle = document.querySelector('label[for="nav-checkbox"]');
+
+if (navCheckbox && navToggle) {
+  navToggle.setAttribute('aria-expanded', 'false');
+  
+  navCheckbox.addEventListener('change', () => {
+    navToggle.setAttribute('aria-expanded', navCheckbox.checked ? 'true' : 'false');
+  });
+}
+
 const weightSlider = document.getElementById("weight");
 const opszSlider = document.getElementById("opsz");
 

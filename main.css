@@ -39,7 +39,7 @@ html {
     body{
     margin: 0;
     background-color: #F4F1E8;
-    color: #6B7450;
+    color: #353928;
     font-family: "warbler text", serif;
     overflow-x: hidden;
 }
@@ -547,7 +547,7 @@ h2 {
   margin-top: 1.25rem;
   font-family: "Warbler Variable", serif;
   font-size: 0.9rem;
-  color:#7A845C ;
+  color:#353928 ;
   letter-spacing: 0.03em;
 }
 @media screen and (max-width: 799px) {
@@ -639,9 +639,8 @@ h2 {
   font-size: 0.85rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  opacity: 0.6;
   margin-bottom: 0.5rem;
-  color: #4A5632;
+  color: #353928;
 }
 .character-string {
   display: flex;
@@ -740,7 +739,7 @@ h2 {
 
 }
 .site-footer {
-  background-color: #B6C184;
+  background-color: #343A1D;
   padding: 1.25rem 0;
   margin-top: 4rem;
 }
