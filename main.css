@@ -47,6 +47,48 @@ img{
     display: block;
     max-width: 100%;
 }
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: #4A5632;
+    color: #F4F1E8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
+    z-index: 998;
+    cursor: pointer;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: #B6C184;
+    color: #4A5632;
+}
+
+@media screen and (max-width: 799px) {
+  .back-to-top {
+    bottom: 1rem;
+    right: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.25rem;
+  }
+}
+
 main {
     width: min(100% - 3rem, 78rem);
     margin-inline: auto;
@@ -105,9 +147,22 @@ h2 {
    
 }
 
+@media screen and (max-width: 799px) {
+  .hero {
+    min-height: 80vh;
+    padding-bottom: 12rem;
+  }
+}
+
 .hero-content {
     position: relative;
     top: 20rem;
+}
+
+@media screen and (max-width: 799px) {
+  .hero-content {
+    top: 8rem;
+  }
 }
 .hero-intro{
     display: flex;
@@ -132,6 +187,13 @@ h2 {
     background-color: #4A5632;
     opacity: 0.3;
 }
+
+@media screen and (max-width: 799px) {
+  .hero-intro::before,
+  .hero-intro::after {
+    width: 5rem;
+  }
+}
 .hero-subtitle{
     margin-top: 1.5rem;
     font-family: "warbler display", serif;
@@ -151,9 +213,15 @@ h2 {
     background-image:url("./assets/lace-hero.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% auto;
+    background-size: 150% auto;
      opacity: 0.90;
     pointer-events: none;
+}
+
+@media screen and (min-width: 800px) {
+  .hero::before {
+    background-size: 100% auto;
+  }
 }
 .hero >*{
     position: relative;
@@ -162,16 +230,22 @@ h2 {
 
 .about-specimen .page-wrapper {
  display: grid;
-  grid-template-columns: 1fr 1.3fr;
-  gap: 3rem;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
   align-items: center;
  
 }
 
 @media screen and (min-width: 800px) {
+  .about-specimen .page-wrapper {
+    grid-template-columns: 1fr 1.3fr;
+    gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 799px) {
   .about-specimen {
-    grid-template-columns: 5fr 7fr;
-    gap: 4rem;
+    margin-top: 2rem;
   }
 }
 .about p{
@@ -352,6 +426,7 @@ h2 {
   .adjectives-words p:nth-child(3),
   .adjectives-words p:nth-child(4) {
     justify-self: start;
+    transform: none;
   }
 }
 .variations{
